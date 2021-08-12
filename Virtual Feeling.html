@@ -1,0 +1,1055 @@
+
+<!-- saved from url=(0085)file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/index_book.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Virtual Feeling </title>
+		<link rel="icon" href="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/tab_browser1.ico" sizes="196x196">
+         
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+		<link href="./Virtual Feeling_files/css2" rel="stylesheet">
+ 
+		<script type="text/javascript" src="./Virtual Feeling_files/jquery.min.js"></script>
+		<script src="./Virtual Feeling_files/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="./Virtual Feeling_files/jquery.booklet.1.1.0.min.js" type="text/javascript"></script>
+
+		<link href="./Virtual Feeling_files/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen">
+		 
+		 
+		 <style>
+         
+              *{
+	margin:0;
+	padding:0;
+}
+
+
+body{
+	background:#eedacb;	
+	color:#686868;
+	font-size:12px;
+    font-family: 'Patrick Hand', sans-serif;
+	
+	
+}
+
+/*End of Page Transition*/
+
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+  
+	animation-name: fade;
+	animation-duration: 3s; 
+	animation-fill-mode: forwards; 
+  }
+  
+  .animatedFadeInUp {
+	opacity: 0
+  }
+  
+  .fadeInUp {
+	opacity: 0;
+	animation-name: fadeInUp;
+	-webkit-animation-name: fadeInUp;
+  }
+  
+  /*End of Animation*/
+
+/* Animation */
+
+
+@keyframes fadeInUp {
+	from {
+		transform: translate3d(0,40px,0)
+	}
+  
+	to {
+		transform: translate3d(0,0,0);
+		opacity: 1
+	}
+  }
+  
+  @-webkit-keyframes fadeInUp {
+	from {
+		transform: translate3d(0,40px,0)
+	}
+  
+	to {
+		transform: translate3d(0,0,0);
+		opacity: 1
+	}
+  }
+  
+
+ 
+.booklet           {
+	width:960px;
+	height:650px;
+	position:relative;
+	margin:0 auto 10px;
+	-moz-box-shadow:0px 0px 1px #f7f2ea;
+	-webkit-box-shadow:0px 0px 1px #f7f2ea;
+	box-shadow:0px 0px 1px #f7f2ea;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.booklet .b-wrap-left  {
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.booklet .b-wrap-right {
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.booklet .b-counter {
+	bottom:10px;
+	position:absolute;
+	display:block;
+	width:90%;
+	height:20px;
+	border-top:1px solid #ddd;
+	color:#222;
+	text-align:center;
+	font-size:12px;
+	padding:5px 0 0;
+	background:transparent;
+	-moz-box-shadow:0px -1px 1px #f9f4e8;
+	-webkit-box-shadow:0px -1px 1px #f9f4e8;
+	box-shadow:0px -1px 1px #f9f4e8;
+	opacity:0.8;
+}
+.book_wrapper{
+	margin:0 auto;
+	padding-top:50px;
+	width:960px;
+	height:650px;
+	position:relative;
+}
+.book_wrapper h1{
+	color:#b1655b;
+	margin:5px 5px 5px 15px;
+	font-size:24px;
+	background:transparent url(images/h1.png) no-repeat bottom left;
+	padding-bottom:7px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.book_wrapper a.title{
+	color:#b1655b;
+	margin:5px 5px 5px 15px;
+	font-size:30px;
+	padding-bottom:7px;
+    text-transform: uppercase;
+    font-weight: normal;
+	text-align: center;
+}
+
+.book_wrapper p{
+	font-size:17px;
+	margin:20px 20px 5px 15px;
+	text-align: justify;
+	text-indent: 30px;
+}
+.book_wrapper h2{
+	font-size:17px;
+	margin:20px 20px 5px 15px;
+	text-align: justify;
+	font-style: italic;
+}
+.book_wrapper h3{
+	font-size:16px;
+	margin:20px 20px 5px 15px;
+	text-align: justify;
+	font-style: italic;
+	color:#b1655b
+}
+.book_wrapper a.article,
+.book_wrapper a.demo{
+	background:transparent url(images/circle.png) no-repeat 50% 0px;
+	display:block;
+	width:95px;
+	height:41px;
+	text-decoration:none;
+	outline:none;
+	font-size:16px;
+	color:#555;
+	float:left;
+	line-height:41px;
+	padding-left:47px;
+}
+.book_wrapper a.demo{
+	margin-left:50px;
+}
+.book_wrapper a.article:hover,
+.book_wrapper a.demo:hover{
+	background-position:50% -41px;
+	color:#13386a;
+}
+.book_wrapper img{
+    display: block;
+}
+
+.big-size{
+	width: 100%; 
+	height: 80%; 
+}
+.regular-size{
+	width: 300px; 
+	height: 300px; 
+	margin-left: 80px;
+}
+.small-size{
+	width: 100px; 
+	height: 100px; 
+	margin-left: 150px;
+}
+
+a#next_page_button,
+a#prev_page_button{
+	display:none;
+	position:absolute;
+	width:41px;
+	height:40px;
+	cursor:pointer;
+	margin-top:-20px;
+	top:50%;
+	background:transparent url(images/buttons.png) no-repeat 0px -40px;
+}
+a#prev_page_button{
+	left:-30px;
+}
+a#next_page_button{
+	right:-30px;
+	background-position:-41px -40px;
+}
+a#next_page_button:hover{
+	background-position:-41px 0px;
+}
+a#prev_page_button:hover{
+	background-position:0px 0px;
+}
+
+a#title{
+	font-size:45px;
+	color:#686868;
+	text-align:center;
+	display: block;
+	font-weight:bold;
+}
+
+.navbar-icon{
+	padding-top: 1%;
+	padding-left: 25%;
+	text-align:left;
+	display: block;
+	font-size: 30px;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+  }
+  
+  li {
+	float: left;
+	padding: 8px;
+  }
+  
+  li a {
+	display: block;
+	padding: 8px;
+  }
+    
+ </style>
+</head><body><div style="text-align:center; display:block; margin-left:25%">
+		<ul>
+			<li> <a class="navbar-icon" onclick="document.location=&#39;home.html&#39;"><img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/home_icon.png" alt="HTML tutorial" width="30" height="30"></a></li>
+			<li> <a class="navbar-icon" href="https://www.instagram.com/widyline/"><img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/instagram.png" alt="HTML tutorial" width="30" height="30"></a></li>
+			<audio src="https://r6---sn-npoeen7k.googlevideo.com/videoplayback?expire=1628460469&amp;ei=VQEQYZS-IYb11wLcxJ3ABA&amp;ip=212.102.57.202&amp;id=o-AJeGgmQCpV00WiaixDPdLLuDf6eb0i5qt90TFb9NxmHX&amp;itag=18&amp;source=youtube&amp;requiressl=yes&amp;vprv=1&amp;mime=video%2Fmp4&amp;ns=q66eZTqNj7Nu_ZTBgc8qWYAG&amp;gir=yes&amp;clen=22635736&amp;ratebypass=yes&amp;dur=1010.091&amp;lmt=1612725723139614&amp;fexp=24001373,24007246&amp;c=WEB&amp;txp=5530434&amp;n=yrLcIzCuXQG049I&amp;sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&amp;sig=AOq0QJ8wRAIgZTQ61sGvIL01C1n92_KCPWqSR4jCmKTDcOJtP5xINGACIEMkdFusjgtwUPoq3FagXiN9NTVaopsqobVmB8KWAD1m&amp;rm=sn-n02xgoxufvg3-2gbs7d,sn-4g5e6l7s&amp;req_id=c124b2539b09a3ee&amp;redirect_counter=2&amp;cms_redirect=yes&amp;ipbypass=yes&amp;mh=Mz&amp;mip=180.245.245.27&amp;mm=29&amp;mn=sn-npoeen7k&amp;ms=rdu&amp;mt=1628438464&amp;mv=m&amp;mvi=6&amp;pl=24&amp;lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&amp;lsig=AG3C_xAwRQIgRgL2ZEw_OZMrO1uJUn8lDMVFeBZbmCJ6GCWOD416O2UCIQCnhvE5yHp7Oh_KNqMe3OyJiX27oVzuvmR77LfC3kdyWg%3D%3D" controls="">
+				<p>If you are reading this, it is because your browser does not support the audio element.</p>
+				</audio>
+		</ul>
+	  
+	  
+</div>
+<div><a id="title" class="animated animatedFadeInUp fadeInUp">" Virtual Feeling "</a></div>
+
+
+	
+	
+	
+
+    
+		<div class="book_wrapper animated animatedFadeInUp fadeInUp">
+			
+		
+			<a id="next_page_button" style="display: inline;"></a>
+			<a id="prev_page_button" style="display: inline;"></a>
+			 
+			<div id="mybook" style="width: 900px; height: 650px; margin-top: 0px;" class="booklet">
+				<div class="b-load">
+					<div class="b-page b-page-0 b-p1" style="display: block; left: 0px; width: 450px; height: 650px;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+					<br>
+					<br>
+							<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/1_cloud_nbg.png" class="big-size" alt="">
+					</div><div class="b-counter">1</div></div></div><div class="b-page b-page-3 b-p4" style="display: block; left: 450px; width: 450px; height: 650px;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Riuhnya media sosial berkebalikan dengan hidupku. Dulu aku pernah berharap agar bisa punya waktu sendiri dan lebih memikirkan hidupku yang mau dibawa kemana, tak sangka terkabul dengan putusnya hubunganku dengan Ryan pada pertengahan Februari tahun lalu. Sebuah hubungan yang setengah hati aku jalani. Momen dimana akhirnya aku bisa punya banyak waktu sendiri untuk melakukan hal yang aku suka dan bertemu orang baru, tapi yang aku dapatkan adalah kenyataan bahwa semua harus mengisolasi diri untuk jangka waktu yang tidak jelas, terjebak kesepian yang tidak berujuang.</p>
+						<p>Malam itu listrik padam, hanya aku dan koneksi internet di hpku, aku menemukan beberapa aplikasi yang menarik, salah satunya aplikasi bertukar surat elektronik, sebuah virtualisasi surat melalui jasa pos.</p>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/slowly.png" class="small-size" alt="">
+						<p>Orang-orang yang dipertemukan oleh program komputer untuk bertukar sapa secara anonim terkadang jadi lebih terkoneksi secara jujur dibandingkan teman bertahun-tahun disisi lain kubikel kantor.</p>
+					</div><div class="b-counter">4</div></div></div>
+					<div class="b-page b-page-1 b-p2" style="display: block; left: 450px; width: 450px; opacity: 1; height: 650px; overflow: hidden;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<br>
+						<h1 style="padding-top: 10%">Prolog</h1>
+						<p>Kehidupan berlanjut. musim dan perayaan telah berulang tapi Pandemik ini masih saja memburuk, sialnya satu-satunya kisah romansaku ialah jatuh cinta pada karakter fiksi, sampai seorang pria dari internet mengirimkan surat elektronik.</p>
+		
+					</div><div class="b-counter">2</div></div></div>
+
+	<!--Bagian 1-->	
+					<div class="b-page b-page-2 b-p3" style="display: block; left: 900px; width: 0px; height: 650px; padding-left: 0px; overflow: hidden;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px; left: 0px;"><div>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/surat%20elektronik.png" class="regular-size" alt="">
+						<h1>I. Surat Elektronik</h1>
+						<p>Januari 2021 menjadi awal tahun penuh keraguan dan kelesuan bagi seluruh warga dunia, tidak ada resolusi optimis bertebaran di media sosial, hanya ada berita buruk dan doa.</p>
+						<p>Pandemik ini masih menjadi hantu bagi para pencari nafkah, menjadi musuh dari para tenaga medis. Kicauan di media sosial tidak kalah bising dari apa yang diberitakan media lokal soal pemerintah, kasus korupsi dana bantuan sosial dan orang-orang yang dibutakan teori konspirasi.</p>
+					</div><div class="b-counter">3</div></div><div class="b-shadow-f" style="right: 0px; width: 450px; height: 650px;"></div></div>
+					
+					<div class="b-page b-page-4" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h2>Hi Sara
+							<br>
+							You can call me Jo, I'm from Bogor.
+							<br>
+							Let me guess, You are from Bogor too. Right?</h2>
+						<p>Begitu awal surat pertama darinya, berbicara tentang karir dan kebosanan di masa pandemik sebuah awal menarik untuk username yang membosankan, "internetdude".</p>
+						<p>Apa yang terjadi padaku tentang pria di internet ini adalah diluar dugaan. Ia menarik seperti surel yang dikirimkannya setiap hari, hal-hal ringan dan tidak menyinggung kearah romansa kotor kebanyakan di Internet, ketulusan untuk bercerita dan menanggapi caritaku sebagai seorang teman. kami bercerita mengenai semua lagu, kuliner dan tempat kesukaannya di kota kami. kota hujan yang katanya tercipta dari sendu tapi sering juga terasa syahdu. hari demi hari suratnya selalu menjadi bagian dari hariku, semua tentangnya menjadi sangat menarik sekarang.</p>
+						<p>Kami mengeluhkan buruknya media sosial saat ini, berbagi pengalaman soal menjadi orang dewasa, berbagi harapan untuk pandemik segera berakhir. Aku stidak harus bertemu dan menjadi bagian dari daftar temannya di sosial media. Aku cukup merasa nyaman  cara ini. sebuah pengalaman pertemanan dengan cara baru.</p>
+					</div><div class="b-counter">5</div></div></div>
+					<div class="b-page b-page-5" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Satu hari sampaikan harapanku ingin seperti ini terus.
+							“menjadi anonim, teman tanpa nama” tulisku dalam penutup surat.
+							Malam demi malam berlalu dengan tumpukan pekerjaan di layar monitorku, yang tidak aku sadari sebenarnya surat darinyalah yang membuatku gelisah menunggu.</p>
+						<p>Dalam sesi pertemuan virtual kantor siang itu, notifikasi dari Aplikasi surel ini membuyarkan fokusku. aku periksa layar ponselku. Ada namanya dalam baris notifikasi. Dengan senyum-senyum kecil,aku berusaha menyelesaikan pertemuan virtual segera mungkin.</p>
+						<p>Surat darinya adalah hal terbaik di hari itu pikirku, aku berusaha mengatur nafasku yang terlalu bersemangat, dari layar kulihat Aldo dan Nina sedang bergeleng-geleng sambil tertawa kecil, aku yakin itu untukku meskipun tak mengerti apa maksudnya.  </p>
+						<p>Mengenai pria di Internet ini mereka sudah bosan mendengarkan ceritaku, sangat bosan. seperti membicarakan kembali tempat makanan di Jakarta dari rekomendasinya, anime lawas yang ia dengarkan, musik kesukaannya dan buku yang berusaha dibacanya.</p>
+						<p></p>
+					</div><div class="b-counter">6</div></div></div>
+					<div class="b-page b-page-6" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Membaca sapaannya pada pembuka surat seperti nampak jelas ekspresi seseorang yang aku rindu di sisi sana, aku sadar sekali hari itu, aku rindu cerita dia, pertanyaan dia, hal-hal konyol dan kucingnya. Namun, akhirnya aku tahu bahwa surat panjang itu diakhiri dengan ucapan terima kasih dan permohonan pamit.</p>
+						<p>"Pamit?" tanyaku dalam hati mulai kacau. alasan pamitnya pun kurang meyakinkan, karena dia tidak lagi tertarik menggunakan aplikasi ini. dilain sisi, memang tidak semua orang cocok untuk bertukar surat.</p>
+						<p>"Semoga kamu menikmati masa-masa 20an ini dan bertemu orang yang pas suatu hari nanti yang tidak telalu lama"</p>
+						<p>"ada apa sih?" tanyaku dalam hati. Untuk ukuran orang yang tidak aku kenal, aku merasa kehilangan. Aku sadar tidak boleh berharap banyak pada orang di dunia maya.</p>
+						<p>Aku curahkan perasaan kecewaku dalam beberapa kata, rasa terima kasih atas cerita dan waktu yang diberikan dan juga permohonan maaf. Aku sadar hal seperti ini bisa terjadi dalam dunia virtual. yang tidak  aku tahu bahwa akan secepat ini, entahlah satu bulan bertukar pesan adalah waktu yang sangat lama juga pengalaman pertama.</p>
+					</div><div class="b-counter">7</div></div></div>
+					<div class="b-page b-page-7" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>“bisa aku tahu Podcastmu?” tanyanya dalam surat balasannya kemudian.</p>
+						<p>	"waduh, kenapa harus tanya catatan memalukanku ini?" tanyaku dalam hati merasa risih juga malu.  Aku sadar aku masih penasaran, lalu aku balas dengan memberikan nama akun sosial mediaku dan permainan anonim yang terasa menggelikan ini pun selesai.</p>
+						<p>30 menit adalah waktu yang diperlukan agar suratku sampai ke tempatnya, tak sangka ada notifikasi baru bahwa dia membalas suratku beberapa saat kemudian. sebuah perjalanan surat virtual yang harus aku tunggu selama 30 menit untuk bisa membaca suratnya. baru aku rasakan 30 menit yang sangat lama. ada pertanyaan dalam hatiku, mengapa dia perlu membalas suratku lagi? bukankah telah aku kirimkan akun sosial mediaku yang seharusnya bisa dia gunakan untuk menyapa disana atau tidak perlu menghubungiku lagi.</p>
+						<p>semoga dia tidak jadi menutup akunnya.</p>
+						<h2>"Hey, I just want to make sure that I don't comfortable meeting in person, i am also an Introvert. is that ok? if so, I will reach you"</h2>
+					</div><div class="b-counter">8</div></div></div>
+					<div class="b-page b-page-8" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						
+						<p>Ada perasaan bingung dalam diriku dengan pertanyaannya ini, antara apa memang aku ingin bertemu orang asing di Internet dan kenapa dia tidak mau bertemu denganku? intovert? terlalu keren buat aku? siapa sih orang ini? saat itu semakin bertumpuk saja rasa penasaranku tentangnya.</p>
+						<h2> "Calm dude, I never imagined meeting strangers on the Internet before, just let's be virtual friend" Jawabku dalam surat terakhir. </h2>				
+						<p>Aku tidak menyangka keputusanku akan mengarahkan aku pada pengalaman yang paling ku hindari.</p>
+						<p>Jatuh cinta.</p>
+					</div><div class="b-counter">9</div></div></div>
+					<div class="b-page b-page-9" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div></div><div class="b-counter">10</div></div></div>
+	<!--Bagian 2-->			
+					<div class="b-page b-page-10" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>II. Imajinasi</h1>
+						<p>Awalnya aku kira kenalan di Internet hanya dipenuhi Cowok Geek yang tidak punya kehidupan nyata yang menyenangkan atau Cowok Creepy yang punya motif khusus. 
+							Tuhan mengirimkan orang lain, dia memang menarik, namanya mengingatkanku pada cinta pertamaku di masa SMP. aku tidak bilang dia terbuka, tapi karena kami cukup dapat dikatakan kaum introvert, kami bisa berkomunikasi . aku terkesan pada pandangan pertama. bertukar pesan dengannya membuatku bahagia, rasanya menjadi anonim selamanya dengan orang ini adalah keputusan yang sangat bodoh untunglah dia mengirimkan surat pamitan itu.</p>
+						<p>Aku juga baru sadar bahwa selama ini menggunakan bahasa inggris padahal sama-sama orang sunda.</p>
+						<p>Setiap malam kami bertukar obrolan dan tak terasa setiap itu waktu berlalu dengan cepat dan kami selalu akhiri dengan bertukar ucapan selamat malam, begitu juga untuk malam-malam lainnya.</p>
+						<p>Terkoneksi dengan berukar cerita masa-masa sulit, kekonyolan diri, kegemaran, impian hingga humor tergaring yang pernah didengar adalah hal tebaik yang pernah aku rasakan.</p>
+					</div><div class="b-counter">11</div></div></div>
+					<div class="b-page b-page-11" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Aku pernah punya orang yang dekat denganku biasanya lebih tua dan lebih muda dengannku, mereka seperti kakak dan adik, tapi orang ini berbeda dia seperti teman yang ingin aku temui.</p>
+						<p>"Sial" aku mengumpat dalam hati. dia kan tak ingin bertemu. sialnya orang ini semakin membuatku penasaran dan membayangkannya dalam hariku.</p>
+						<p>Persis seperti tokoh Anime favoritku Sharon Lee dari Card Captor Sakura. Aku mulai membayangkan betapa sempurnanya orang ini untukku, dia Sharon Lee punyaku.
+							Langit-langit di kamarku menjadi sangat berwarna malam itu, lagu-lagu menjadi tentang dia. semalaman aku terjaga dalam lamunan dan skenario tentangnya di hidupku.</p>
+						<p>Dia seperti teman misterius di dunia wonderlandku. Dia sering memberiku pandangannya tentang hal-hal yang aku alamai membuatku lebih baik lagi melihat dunia. Aku tenggelam dalam imajinasiku sendiri.
+						</p>
+						<p>Imajinasi seorang wanita.</p>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/hatter.png" style="width: 90px; height: 90px; margin-left: 70%;" alt="">
+
+					</div><div class="b-counter">12</div></div></div>
+	<!--Bagian 3-->								
+				
+					<div class="b-page b-page-12" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/kucing.png" class="regular-size" alt="">
+						<h1>III. Kucing</h1>
+						<p>Aku bukan pecinta binatang,  tapi aku suka melihat video tingkah lucu bintang Internet ini. Aku selalu suka para pecinta binatang seperti adik dan ibuku.</p>
+						<p>Adikku sangat menyayangi Kino Kucing kampung yang selalu datang setiap hari. melihatnya akrab dan bermain membuatku senang sendiri. Kino punya 3 saudara kandung dan ibu kandung.</p>
+						<p>Beberapa hal tentang kucing mengingatkanku tentangnya.</p>
+					</div><div class="b-counter">13</div></div></div>
+					<div class="b-page b-page-13" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Dia yang sangat menyukai video kocak kucing di Internet dan dia yang bercerita tentang kucing Jalanan piharaannya atau cerita tentang kucing jalanan yang lehernya dilakban orang iseng yang membuatnya bad mood.</p>
+						<p>Ada hal yang membuat aku selalu kagum pada pecinta binatang, mereka tulus tanpa mengharapkan apapun.</p>
+						<p>Satu hari dia bertanya apakah aku 'cat person'?.</p>
+						<p>kucing bagiku adalah sekelompok peliharaan yang malas jika majikannya terlalu memanjakan, Dulu, di rumahku kucing dipelihara untuk berburu tikus di gudang atau di loteng, bukan jadi pajangan atau bahkan teman.</p>
+						<p>aku pernah punya kucing yang diberi nama Ken, garis keturunannya sepertinya lebih serius dibandingkan aku, bulunya yang putih dan lebat membuat semua orang gemas, tapi tidak oleh ayahku, Ken yang sepertinya kucing rumahan tak juga ditemukan oleh pemiliknya selama lebih 3 bulan ini, ia sudah menjadi kucing penuh muslihat di rumah kami, si pemburu mahir dari tikus liar hingga masakan ibu. Ken jadi kesayangan ayahku pada akhirnya, nama ken sendiri bukan dari nama Pacar Barbie, tapi diambil dari nama kensin karena ada baret di dekat matanya hasil berkelahi dengan kucing lain di belakang rumah. Entahlah Masalah anak cowok.</p>
+					</div><div class="b-counter">14</div></div></div>
+					<div class="b-page b-page-14" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>jadi, apakah aku cat person?<br>
+
+							</p><p>"tergantung" jawabku, tidak ada yang seperti Ken.</p>
+							
+							<p>Aku melanjutkan cerita, tidak terasa ken sudah hampir setengah tahun bersama keluargaku, sore itu ia diajak ngabuburit naik motor ke taman yang disulap menjadi pasar kaget bersama ayahku, ayah sangat senang menggendong ken kesana kemari. </p>
+							
+							<p>Lalu, seorang remaja dan seorang gadis kecil yang sepertinya adalah adiknnya menghampiri aku dan ayahku, dia melihat ken seraya berseru  "Nini ?"</p>
+							
+							<p>Ken pun langsung menghampiri remaja itu tanpa keraguan diikuti oleh gadis kecil itu.</p>
+							
+							<p>sambil mengusap-usap Ken, pria itu memberikan penjelasan kepada ayahku, aku tidak begitu perhatikan percakapannya,  tatapanku tertuju pada si kucing Ken yang sedang dielus elus oleh gadis kecil itu  kembali menatap remaja itu lalu begitu saja berulang kali sampai percakapan itu berakhir, aku memberikan pelukan terakhir pada Ken.</p>
+					</div><div class="b-counter">15</div></div></div>
+					<div class="b-page b-page-15" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						
+						<p>
+							<br>“jadi Ken itu betina ya yah?" membuka obrolan dengan ayah di motor dijawab dengan tawa ayah geli. Kembali tanpa membawa pulang Ken alias NIni. Sejak saat itu aku tidak punya kucing selain kucing jalanan yang sering datang untuk menagih makan siang dari ibu.
+							<br>"Mungkin aku lebih ke dog person deh, karena aku gak akrab sama kucing lain" jawabku melanjutkan.
+							<br>"Yakin?" tanya jo tidak yakin.
+							<br>"Anjing itu menyenangkan, bisa diajak berlari dan rasanya lebih aktif dan peduli sama majikannya, waktu pamanku menitipkan Bruno seharian aku benar benar dihantui wajah Bruno tau ga" Jo semangat menjelaskan.
+							<br>"Bruno yang selalu di hadapanku siap mengajak bermain, mukanya seperti bertanya apa kabar seribu kali dalam sehari, gila ga?" kata Jo meminta konfirmasi.
+							<br>dia nungguin aku keluar dari toilet, belum lagi gonggongannya yang bikin aku harus minta maaf ke tetangga, repot deh. aku bener bener dihantuin sama tatapan penuh adrenalin dia.. hiiih" lanjutnya begidig
+						</p>
+
+						<p>Aku cukup terhibur dengan cerita bruno yang merusak hari Jo, aku juga akan kesal jika seharian harus dihantui anjing yang terus ingin bermain, rasanya seperti jadi baby sitter ponakan sendiri.</p>
+
+					</div><div class="b-counter">16</div></div></div>
+					<div class="b-page b-page-16" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Sesuatu soal Kucing dan Jo akhirnya aku bisa menemukan kesamaan. Jo itu seperti kucing selain profil picture bergambar kucing yang terkadang membuatku seperti berbicara dengan kucing siluman. aku akui kucing itu pemalas, manja dan sedikit jorok tapi disisi lain dia pintar, menggemaskan, menyenangkan dan tidak mengganggu ketenangan. Aku juga pernah ceritakan seorang ibu tua yang memiliki banyak kucing yang sering ia penggil "Anak-anakku". ibu itu kesepian dan membuat hari-hari sang ibu tua sangat nyaman. Jo juga seperti itu dan dia membuatku merasa nyaman untuk ukuran orang yang menghindari intimasi dalam hubungan yang sebatas teman.</p>
+						<p>Sesuatu soal Kucing dan Jo akhirnya aku bisa menemukan kesamaan. Jo itu seperti kucing selain profil picture bergambar kucing yang terkadang membuatku seperti berbicara dengan kucing siluman. aku akui kucing itu pemalas, manja dan sedikit jorok tapi disisi lain dia pintar, menggemaskan, menyenangkan dan tidak mengganggu ketenangan. Aku juga pernah ceritakan seorang ibu tua yang memiliki banyak kucing yang sering ia penggil "Anak-anakku". ibu itu kesepian dan membuat hari-hari sang ibu tua sangat nyaman. Jo juga seperti itu dan dia membuatku merasa nyaman untuk ukuran orang yang menghindari intimasi dalam hubungan yang sebatas teman.</p>
+					</div><div class="b-counter">17</div></div></div>
+					<div class="b-page b-page-17" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Seperti kucing jalanan, sikapnya kadang membuatku bingung. Kadang dia cuek, kadang sangat needy, menyenangkan dan berakhir menghilang. Suatu hari, aku biarkan pertanyaannya tak aku jawab berhari-hari, harapku dia menyapaku. tapi tidak.</p>
+						
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/message.png" style="width: 150px; height: 150px; margin-left: 60%;" alt="">
+						<p>Karena jengkel akhirnya aku jawab juga, tapi tidak ada tanda bahwa dia akan menyapaku suatu hari nanti. semuanya selalu aku yang memulainya. seperti profil picturenya, kucing yang harus banyak dimaklumi.</p>
+						<p>Aku pernah berusaha mendapatkan perhatiannya, bahkan dia tidak pernah membahas podcast terbaruku lagi, sebuah pertanyaan yang ia ajukan yang membawaku lebih mengenalinya. sebuah episode baru yang aku buat tentangnya yang tentu saja dia tidak tahu.</p>
+						<p>Aku mulai kesal dengan perasaan yang dibatasi ini, aku yang tidak mengerti sikap dia membuatku bertanya dan terus penasaran. </p>&gt;
+					</div><div class="b-counter">18</div></div></div>
+					<div class="b-page b-page-18" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Seperti ibuku yang menunggu kucing untuk jatah makan siangnya, ironinya ibuku tidak pernah menunggu, Ibu menyiapkan makanan saja. sedangkan aku menunggunya dengan penuh harap, hari demi hari aku hitung dari chat dan jam terakhir kami saling berbagi cerita.</p>
+						<p>Perasaan campur adukku ini ditambah dengan caranya menghilang tiba-tiba meninggalkan pertanyaanku yang tidak terjawab, apakah benar, dia sedang sibuk atau apakah ada masalah? atau apakah aku sedang dipermainkan?</p>
+						<p>setengah mati aku penasaran tentangnya, tentang dia yang belum pernah aku temui. Menghilangnya berlanjut menjadi hilang yang panjang.</p>
+						<p>Berakhir dengan status pesan "read"</p>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/kucing2.png" style="width: 230px; height: 230px; margin-left: 25%;" alt="">
+					</div><div class="b-counter">19</div></div></div>
+					<div class="b-page b-page-19" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div></div><div class="b-counter">20</div></div></div>
+	<!--Bagian 4-->
+					<div class="b-page b-page-20" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>IV. Rindu</h1>
+						<p>Pagi itu sinar mentari sudah menembus gorden jendela kamarku. Aku bisa merasakan sinarnya tanpa perlu membuka mataku yang sembab karena menangis semalaman, kurapihkan meja kerjaku dari tisu dan cat air, sebuah lukisan gadis  yang tertidur di padang bunga membuat hatiku terenyuh, aku terbiasa melukis untuk memproses perasaan. Ada perasaan lelah saat aku memegang buku harianku.</p>
+						<p>“how can i miss someone i've never met”  tanyaku pada buku harian berharap ia memberi jawaban.</p>
+						<p>Sungguh, ini terasa konyol dibalut dengan rasa jengkel bukan main, perjalanan ke kantorku aku isi dengan lamunan.</p>
+						<p>Saat menunggu lift, kuperhatikan seorang pria paruh baya sedang bertelepon, rona bahagia di pipinya dan gombalannya menarik perhatian orang sekitar, seorang ibu dibelakangnya bahkan tak bisa menahan  tertawa gelinya, tapi ia tak menghiraukannya, ia  terus melemparkan gombalan untuk sang kekasih di ujung telpon sana.</p>
+					</div><div class="b-counter">21</div></div></div>
+					<div class="b-page b-page-21" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Di dalam lift, aku masih lihat senyum-senyum kecilnya yang tidak bisa hilang disaat sambungan telepon harus terputus, tak sabar agar segera keluar lift, kiranya aku tahu saat itu bahwa semua perasaan itu selalu nyata. jika aku tidak tahu perasaan pria dari internet ini setidaknya aku sadar akan perasaanku.</p>
+						<p>Jantungku jadi berdebar khawatir dan berharap ini bukan rasa sayang.</p>
+						<p>Aku tidak bisa berhenti memikirkan balasannya hingga di malam-malam itu aku terbangun dengan mimpi dering notifikasi dan pesan masuk di layar ponselku, sebuah pesan hangat seperti biasanya, tapi aku tak tahu apa isinya. dengan jantung berdebar aku terperanjat dan membuka ponselku,</p>
+						<p>"tidak ada pesan"</p>
+					</div><div class="b-counter">22</div></div></div>
+					<div class="b-page b-page-22" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Aku kaget dengan responku sendiri, aku merasa terhina dan kesal. Merasa dipermainkan dengan halusinasiku sendiri.</p>
+
+						<p>Malam itu aku kecewa pada diriku sendiri. Aku bisa katakan dia seperti tokoh fiksi yang membuatku membuka halaman baru terus menerus atau tokoh dalam series mingguan yang membuatku gemas penasaran.Sayangnya aku tidak punya kendali apapun untuk memenuhi rasa penasaranku, aku hanya bisa menunggu halaman selanjutnya terbuka dan episode selanjutnya rilis.</p>
+
+							<p>Perasaan manusia itu seperti sumur yang dalam, kita tahu di dalam sana ada sesuatu yang ingin kita tarik kepermukaan.</p>
+
+							<p>Bahkan aku tidak tau dimana sumur ini berada</p>
+							<br>
+						<h3>How can you miss someone you've never met?
+							<br>
+							'Cause I need you now but I don't know you yet
+							<br>
+							But can you find me soon because I'm in my head?
+							<br>
+							Yeah, I need you now but I don't know you yet
+							<br>
+							(alexander 23 - idk you yet)
+						</h3>
+							
+					</div><div class="b-counter">23</div></div></div>
+					<div class="b-page b-page-23" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/kamar.png" style="	width: 450px; 
+						height: 630px; 
+						" alt="">
+					</div><div class="b-counter">24</div></div></div>
+	<!--Bagian 5-->
+					<div class="b-page b-page-24" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>V. Ardi</h1>
+						<p>Sabtu malam dengan secangkir teh hangat di meja kamarku, aku membaca kembali surat yang pernah ia kirimkan, mungkin ada clue dari menghilangnya. aku sadar betapa aku jatuh cinta dengan surat-suratnya.
+							jujur, aku gila menunggu suratnya. Ada pikiran waras yang berusaha keras menyadarkanku dengan pesan ‘kamu hanya ingin berteman, tapi dia buatku bertanya dengan cara menghilang’. ku pikirkan itu, tapi aku juga tahu kondisiku saat ini aku tidak bisa membedakan mana rasa rindu dan penasaran apa lagi sayang.</p>
+							<p>ponselku berdering oleh pesan masuk dari Ardi, teman yang selama ini menghibur rasa sedihku dengan omelannya. menghiburku meski aku enggan lagi bercerita soal kekonyolan kisah virtualku ini. Malam itu kami mengobrol panjang tentang finansial hingga nostalgia masa kecil kami, saat bocah kelas 1 SD hampir tiap hari dititipkan padanya anak kelas 4 SD untuk berangkat sekolah bersama, cukup aneh takdir kami selalu bersama hingga bisa bekerja di kantor yang sama. Saat kuliah di universitas yang sama orang tuaku selalu menitipkanku padanya bahkan sampai Ardi punya uang jajan sendiri dari orang tuaku.</p>
+					</div><div class="b-counter">25</div></div></div>
+					<div class="b-page b-page-25" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Dalam keseruan obrolan kami, tiba tiba kesunyian hadir disambung kesunyian yang panjang setelah akhirnya aku menceritakan rasa gelisahku belakangan ini, tentu yang Ardi tahu aku sedang sedih saja. tidak juga mendengar suara dari sisi sana, aku mulai mengomel tentang kualitas internet kosanku karena tak juga mendengar suara dari ujung sana. sebelum aku lanjut omelanku, di ujung sana, sebuah nyanyian lembut membuatku termenung.</p>
+						<h3>When it's through,<br> it's through Fate will twist the both of you <br> come on baby, <br> come on over <br>Let me be the one to show you</h3>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/call_ardi.png" style="width: 450px; height: 250px; margin-left: 1%;" alt="">
+
+					</div><div class="b-counter">26</div></div></div>
+					<div class="b-page b-page-26" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Sebuah lagu to be with you dari Mr. Big, dia sangat menyukai lagu-lagu lama. Dia sering mengejek selera musikku yang terlalu mengikuti tren.
+							Malam itu aku berterima kasih padanya, membuatku ikut bernyanyi dan mendengarkan kisahku dan pria di internet sana. bercerita tentangnya adalah hal yang menyenangkan seperti aku sedang melukis karakternya.</p>
+						<p>"Di?" sautku bingung karena tidak ada respon apapun saatku bercerita.</p>
+						<p>"wah kamu tidur ya?" tanyaku jengkel tapi tidak ada juga respon.</p>
+						<p>“kalau aku hilang, kamu bakal nyariin gak ya?” tanya Ardi yang menyambung kesunyian dengan kesunyian baru.</p>
+						<p>Aku merasa tidak enak dengan pertanyaanya, aku berusaha mengalihkan dengan kejadian lucu di kantor kemarin sore, tentang aku yang salah sangka mendapatkan bunga ternyata itu untuk atasanku.</p>
+						<p>Kami saling mengucapkan selamat malam untuk menutup obrolan agar bersiap kembali bekerja di kantor Esok hari, tapi Ardi tidak menyapaku sama sekali. aku menghela nafas dengan payah, aku tau ada yang tidak beres.</p>
+						
+					</div><div class="b-counter">27</div></div></div>
+					<div class="b-page b-page-27" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Aku sempat curhat dengan sahabat SMAku yang sedang mempersiapkan pernikahannya beberapa hari sebelumnya, Ana namanya. awalnya Ana senang melihat aku memiliki kemajuan karena bisa terbuka dengan orang baru dengan niatku sendiri, tapi kemudian ia ragu.</p>
+						<p>"kenal dengan orang dari Internet, tanpa membangun kedekatan nyata, rasanya belum kenal deh Sar, aku pikir sekarang ini kamu hanya sedang memproyeksikan dia Sar" ucap Ana yang membuatku mempertanyakan kembali sikapku.</p>
+						<p>Ana juga menanyakan perihal Ardi. aku jelaskan bahwa aku dan Ardi tidak memiliki ekspektasi  dalam hal romansa, tapi Ana hanya mengiyakan dengan ragu seraya berpesan di ujung obrolan siang itu.</p>
+						<p>"Jangan terlalu berharap ya, aku takut kamu sakit" ucap Ana padaku. Sambil menatap Ardi yang sedang bekerja dari mejaku aku sadar bahwa kami tidak pernah berbicara soal ini. ada perasaan canggung, geli dan aneh. Ardi sudah seperti sepupuku sendiri.</p>
+						<p>Aku menarik nafas dalam-dalam dan kembali bekerja. Tak kusadari, Ardi mencuri pandang juga ke arahku.</p>
+					</div><div class="b-counter">28</div></div></div>
+	<!--Bagian 6-->
+
+					<div class="b-page b-page-28" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>VI. Bagian Terburuk</h1>
+						<p>Aku kira sebuah balasan dari Jo suatu hari nanti akan melukaiku, menghancurkan ekspektasi dan fantasi yang sudah menjadi gedung tinggi ini.</p>
+						<p>"sometimes being ghosted is better than being forced to face the truth, i just couldn't help crushing on you Jo" tulisku dalam buku harianku, akhir-akhir ini aku sering menulis bahkan menggambar. dua hal inilah yang aku lakukan ketika sedang merasakan perasaan yang kuat.</p>
+						<p>Biarkanlah aku menjadi egois menyimpan ide tentang aku yang takut rasa suka ini berakhir menjadi rahasia seperti ceritaku dan anak Akselerasi di bangku SMP.</p>
+						<p>Ia Ryan, anak seumuranku. waktu itu jam 12 siang setelah sholat dzuhur aku pulang bersama teman sebangkuku, namanya Lina. kami sedang dalam angkot yang menunggu penumpang, ada dua orang anak laki-laki yang mengalihakan perhatian kami. satunya anak berkacamata duduk di samping supir, satunya lagi cowok manis yang terus bergurau seperti tidak pernah kehabisan bahan, Ryan.</p>
+					</div><div class="b-counter">29</div></div></div>
+					<div class="b-page b-page-29" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Beberapa menit berlalu, Lina pamit pulang, karena angkot sudah sampai tepat didepan rumahnya yang besar dan Heli si anjing Golden Retriever yang mengingatkannku pada film anjing "Air bud".</p>
+						<p>Akupun memalingkan wajah ke jendela yang setengah terbuka dan sesekali mencuri pandang ke arah dua anak laki-laki ini yang obrolannya terdengar oleh seisi angkot.</p>
+						<p>"Kiri" sautku dan Ryan bersamaan. Ryan menoleh kebelakang, begitu juga dengan temannya. begitu juga aku melihat mereka kaget.</p>
+						<p>Perlu sekali lagi naik angkot untuk sampai ke rumahku, angkot berwarna biru tua yang sangat lama menunggu penumpang penuh. aku duduk di bangku paling belakang seperti biasa, mulai membuka komik untuk membuang waktu.</p>
+						<p>kemudian Ryan sudah duduk dihadapanku. Sialnya, hanya baru kami berdua saja di dalam angkot butuh waktu beberapa belas menit agar mobil ini mulai berjalan.</p>
+					</div><div class="b-counter">30</div></div></div>
+					<div class="b-page b-page-30" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Aku berubah menjadi kaku, aku berusaha menutup wajahku dengan rambutku dan juga komik yang aku pegang, sepanjang jalanpun aku hanya berusaha membaca komik yang jadi susah dicerna itu, terlebih muatan angkot hari itu padat membuatku gerah.</p>
+						<p>Aku jengkel sendiri kenapa harus dalam kondisi seburuk rupa ini, bahkan untuk ngobrolpun jadi tidak mungkin karena saking tidak nyamannya.</p>
+						<p>"Kiri" sautnya, membuatku melihatnya seketika</p>
+						<p>"Duluan ya" ucapnya.</p>
+						<p>"oh iya" jawabku spontan.</p>
+						<p>itulah hari dimana aku terjebak dalam fiksasi cinta versi anak SMP, sayangnya karena ilmu soal relationshipku hanya sebatas komik dan film korea akhirnya aku hanya menyukai orang ini selama bertaun-taun.</p>
+					</div><div class="b-counter">31</div></div></div>
+					<div class="b-page b-page-31" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Sampai pada usiaku 21 tahun dia menikah, bahkan saat itu belum ada satupun sahabatku yang menikah, mana mungkin aku bisa pikir bahwa dia akan menikah semuda ini.</p>
+						<p>Aku melihat fotonya dengan pakaian putih pengantin sedang melakukan ijab kabul, rasanya itu patah hati besar, meskipun aku tidak pernah mencarinya lagi setelah aku kuliah. aku tidak menyangka ada penyesalan tentang perasaan yang berakhir rahasia untukku, aku mengingat momen momen dimana kami pertama bertemu.</p>
+						<p>Di angkot dengan seragam batik biru sekolah.</p>
+						<p>Di tepi lapang waktu pagi dimana hanya ada aku dan dia saja yang tak sengaja bertukar pandang.</p>
+						<p>Di lorong kelas saat temanku menyebut namanya dari lantai dua kemudian menunjuk kearahku.</p>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/cinta_pertama.png" style="width: 400px; height: 185px; margin-left: 2%;" alt="">
+					</div><div class="b-counter">32</div></div></div>
+					<div class="b-page b-page-32" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Di podium sekolah saat pentas drama SMP, aku setengah mati malu berperan menjadi hantu di hadapan dia yang ada dibarisan terdepan.</p>
+						<p>Dia yang menjadi salah satu alasanku ingin masuk ke SMA yang sama.</p>
+						<p>Di ruang kesenian SMA, ia berada di sudut gedung melihatku menari teatrikal yang entah mengapa membuatku menjadi juara.</p>
+						<p>Dia yang pernah aku kirimkan permintaan berteman di facebook dan aku putuskan beberapa hari kemudian karena aku sadar aku sangat alay dengan segala hal tentang anime dan otaku yang aku ragu dia akan suka.</p>
+						<p>Di saat aku menolak cinta seseorang karena tidak bisa membuka hati juga diminggu yang sama dimana aku melihatnya berboncengan dengan seorang gadis dengan tas bahu pink yang kini menjadi istrinya.</p>
+						<p>Dari aku menemukan sosoknya kembali di internet dan pengumuman resepsinya sampai kini semua hal tentangnya di internet macam dimakan lubang hitam tidak ada yang bisa menemukannya.</p>
+					</div><div class="b-counter">33</div></div></div>
+					<div class="b-page b-page-33" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Hal terburuk yang bisa aku pikirkan adalah penolakan dan rasa insecure terhadap diriku yang tidak pernah merasa cukup, tentang aku yang tidak benar-benar mengerti dia, bahkan tidak berusaha mengenali.</p>
+						<p>Namun, aku menemukan perasaan lebih buruk dari yang terburuk adalah tau bahwa orang yang kamu suka tidak pernah bisa membuka perasaan yang sama dengan kita. saat aku tau dia berusaha membuat jarak saat aku mulai jatuh hati.</p>
+						<p>Itu adalah perasaan terburuk yang sedang aku rasakan.</p>
+					</div><div class="b-counter">34</div></div></div>
+	<!--Bagian 7-->
+					<div class="b-page b-page-34" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>VII. Cinta Pertama</h1>
+						<p>Sudah hampir dua tahun sejak orang yang aku taksir di masa sekolah menikah. Aku kira ujungnya akan seperti film remaja " little crazy thing called love" yang aku tonton saat duduk di bangku SMP. Aku masih bisa menangis saat menyendiri atau spontan bercerita secara anonim melalui kanal jejaring sosial anonim, ketika perasaanku sangat meluap, aku pernah memimpikannya. di suatu malam aku menghubunginya melalui pesan, aku menanyakan perihal produk yang dia jual entah apa, aku menunggunya menatap dengan seksama kolom chat dengan warna latar belakang hitam, aku menunggu dan menunggu, aku bisa merasakan bahwa aku sedang menangis. Kemudian sebuah tanda dari ujung sana sedang menulis pesan, hatiku berdebar lalu ku baca dengan diawali permohonan maaf karena membuatku menunggu, dia harus mengurus kedua anaknya dan dilanjutkan menjelaskan produknya, layarku mati dilanjut dengan kegelapan yang memakan seluruh ruangan. aku terbangun dari mimpi itu dan mulai menangis.</p>
+						
+						<p>Aku belajar untuk mengatasi rasa insecure aku dengan belajar dan bekerja dengan baik, secara finansial, fisik dan mental selama awal usia 20an ini yang membawaku pada persahabatan baru sepanjang perjalanan ini.</p>
+					</div><div class="b-counter">35</div></div></div>
+					<div class="b-page b-page-35" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Bagian yang paling menyenangkan adalah ada orang yang pada akhirnya akan kita temui dengan kualitas yang sama. Aku telah belajar bahwa mengatasi rasa tidak amanku dengan meningkatkan taraf hidup, baik secara finansial, fisik maupun mental . ini semua telah membantuku maju dan bertemu lebih banyak persahabatan di sepanjang jalan dan menemukan hal-hal baru yang aku suka. Aku sadar betapa senangnya bisa bertemu dengannya meski tidak pernah saling memiliki. kami terpisah banyak hal setelah SMA, aku tidak berpikir bahwa akan mengalami pertumbuhan pribadi sebanyak ini setelah berhenti mengharapkannya.</p>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/cinta_pertama11.png" class="regular-size" alt="">
+					</div><div class="b-counter">36</div></div></div>
+	<!--Bagian 8-->
+					<div class="b-page b-page-36" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>VIII. Kembali</h1>
+						<p>“Hey, apa kabar?” sebuah pesan muncul dari layar ponselku.</p>
+						<p>Saat itu rasanya seperti pesan dari planet lain yang sudah aku tunggu setiap saat, sebulan lamanya, ada perasaan terharu dan bersemangat.</p>
+						<p>"Maaf baru bales, sumpah deh kelewat chatmu" tulisnya kemudian ditambah emoticon menangis yang menambah kesan imut.</p>
+						<p>Dalam hatiku perfikir soal 'terlewat' aku memang bukan prioritas, kenapa harus aku menuntutnya? . aku mengabaikannya dan mulai mengobrol kembali.</p>
+						<p>Saat itu rasanya semua hal menjadi berwarna. dia tetap sama kembali dengan cerita kesibukannya dan jam tidur yang berantakan. tentang kucing dan kota Bogor.</p>
+						<p>Satu menit berlalu bahkan kami belum genap 10 menit terhubung bertukar pasan dan layar ponselku menguji kesabaranku dengan notifikasi dari facebook dan pesan provider.</p>
+						<p>Aku menggerutu kecil dan mengambil air minum keluar kamar.</p>
+					</div><div class="b-counter">37</div></div></div>
+					<div class="b-page b-page-37" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Menit berlanjut, aku sadar tidak akan ada pesan masuk lagi. Aku mulai menyadari satu hal, dia adalah orang yang suka menghilang tiba-tiba.</p>
+						<p>Hidup penuh warna yang tak lama kemudaian kembali berubah sepia saat dia menghilang meninggalkan pertanyaanku tanpa jawaban.</p>
+						<p>Mengapa dia tidak bisa menjadi teman belajarku saja, atau teman penaku kembali, apakah aku ini memang tidak pernah jadi teman untuknya? mengapa orang sangat mudah untuk datang dan pergi? atau ini masalah ekspektasi yang berbeda.</p>
+						<p>Sesekali aku jengkel dengan pikiranku sendiri, mungkin dia bertemu orang lain atau membayangkan sebuah kemungkinan bahwa dia sedang menyiapkan pesta ulang tahun atau menikahi orang lain. dilain hari aku menjadi sangat berharap dan di waktu lain di kota hujan ini aku sendu.</p>
+						<p>Kali ini aku menghubungi Ardi ditengah malam berharap dia bisa mendengarkan curahan hatiku.</p>
+						<p>"Jujur, kalau aku jadi kamu, aku bakal frustrasi dan akan hilang minat sama orang kayak gitu. Perhatian dan waktu sangat berharga buatku. Jadi aku gak akan menyia-nyiakannya sama siapa pun yang tidak menghormati itu."</p>
+					</div><div class="b-counter">38</div></div></div>
+					<div class="b-page b-page-38" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"aku gak nyangka loh kamu bisa punya perasaan sedalam ini sama orang yang belum kamu temui, kadang aku ngerasa gak ngerti cewek deh, terutama sama kamu yang susah banget suka sama orang, gak suka digombalin cowok".</p>
+						<p>"memangnya kamu mau di hari valentine dia yang misalnya jadi cowoku, terus mengabaikan kamu karena dia cuek atau lupa"</p>
+						<p>"aku selalu kirim coklat valentine buat diriku sendiri sih" balasku santai seperti semua hal terkendali, tapi ekspresi ardi menyeringai dan menggelengkan kepalanya.</p>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/coklat.png" class="regular-size" alt="">
+						
+					</div><div class="b-counter">39</div></div></div>
+					<div class="b-page b-page-39" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Jujur aku setuju dengan semua yang Ardi sampaikan hari itu, aku merasa bukan aku yang sebenarnya. kenapa aku mau menghabiskan energi untuk memenuhi rasa penasaranku ini. Aku sadar dia hanya orang yang secara acak bertemu di Internet dan selamanya hanya akan ada di Internet.</p>
+						<p>Aku bertekad untuk menjadikan ini curahan hati terakhirku tentang pria di internet. aku mengirimkan surat untuknya pada aplikasi tempat kami bertukar surat yang tentu saja tidak akan terkirim setelah dia menutup akunnya, tapi semoga bisamenjadi penutup semua ekspektasiku tentangnya. "untuk kamu yang tidak pernah menjanjikan apapun tapi membuat hidupku berwarna dengan perasan maya,</p>
+						<p>semoga menikmati masa 20anmu, sukses dan bertemu pasangan yang cocok. kamu adalah rasa penasaranku yang harus aku ikhlaskan. seorang yang sempurna bagi diri yang mencintai ide tentang cinta ini. aku seorang romantis yang putus asa. dan kamu adalah sebuah pelajaran tentang ekspektasi dan komunikasi”</p>
+					</div><div class="b-counter">40</div></div></div>
+					<div class="b-page b-page-40" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Masalahnya aku tidak bisa menemukan orang lain untuk ada dalam pikiranku saat ini. aku selalu kembali memfiksasi orang yang sama.</p>
+						<h3>
+							To dreams that never will come true
+							<br>
+							Am I strong enough to see it through?
+							<br>
+							Go crazy is what I will do
+							<br>
+							If I can't have you, I don't want nobody, baby
+							<br>
+							(if I can't have you - The Bee Gees)
+						</h3>
+						<p>Aku harap saat ia menyapaku kembali, aku bisa mengusirnya dari pikirannku dan menyapu habis perasaanku.</p>
+						<p>Aku harap.</p>
+
+					</div><div class="b-counter">41</div></div></div>
+					<div class="b-page b-page-41" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div></div><div class="b-counter">42</div></div></div>
+	<!--Bagian 9-->
+					<div class="b-page b-page-42" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>XI. Gadis di Bandung</h1>
+						<p>Pukul 1.30 dini hari aku terbangun karena jam tidurku yang semakin kacau setelah berlakunya aturan bekerja dari rumah digalakan kembali, Pandemik ini semakin tidak berujung. Aku memeriksa layar ponselku. Perhatianku tertarik pada DM masuk dari instagram. yap. Jo membalas pesanku pagi tadi pada pukul 12.05, sungguh jelas aku adalah orang lain baginya.</p>
+						<p>aku membalas sekedarnya sambil mengucapkan mantra dalam hati</p>
+						<p>"i don't like him"</p>
+						<p>"i don't care"</p>
+						<p>"ping" suara notifikasi baru.</p>
+						<p>"is it him?" tanyaku seketika dan menyadari mantraku tidak berguna.</p>
+						<p>dia online dan mengirimkan pesan lainnya, dia yang sama-sama menjadi korban kacaunya jam kerja. oh ya, aku juga berbohong tidak bisa tidur disaat mata ini berusaha meminta haknya untuk beristirahat.</p>
+					</div><div class="b-counter">43</div></div></div>	
+					<div class="b-page b-page-43" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>sampai satu bagian di malam itu kami saling terhubung dalam layanan voice call. ia bercerita tentang gadis di Bandung, mahasiswa baru yang dia temui di stasiun Bandung, sama-sama anak rantau yang tak sengaja menghabiskan hari pertama mereka di Bandung, dari mencari barang Jo yang hilang, makan malam sampai mengantarkan sang gadis ke kosannya. aku cukup bingung awalnya kenapa dia bercerita ini, tapi ya aku juga senang bisa ngobrol dengannya, akhirnya checklist penasaranku terpenuhi.</p>
+						<p>mendengarkan suaranya</p>
+						<p>bagian terpenting dari ceritanya adalah tentang seseorang yang dia tinggalkan, gadis prodi keperawatan yang rajin bukan main.</p>
+						<p>"dia sedang sakit serius ketika aku memutuskan untuk pindah kampus di tahun kedua, tidak aku sangka, di taman rumah sakit itu jadi pertemuan terakhir kami"</p>
+						<p>"dia meninggal?" tanyaku hasil berfikir otak sistem 1 yang setengahnya kurang oksigen.</p>
+						<p>"bukan, dia gak mau ketemu lagi sama aku" jawabnya.</p>
+					</div><div class="b-counter">44</div></div></div>
+					<div class="b-page b-page-44" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"yaampun segitunya ya" balasku simpati.</p>
+						<p>"aku selingkuh di kampus yang baru" lanjutnya</p>
+						<p>"hah? gila ya kamu" bentakku kaget, ku rasakan otakku mulai lebih segar sekarang.</p>
+						<p>"yaampun santai dong Ra, waktu itu aku ngerasa yang baru lebih baik, bikin nyaman dan lebih jelas, pas pertama ke Bandung itu aku masih bocah" jelasnya tidak kalah nyolot</p>
+						<p>"terus?" tanyaku menagih pertanggung jawaban</p>
+						<p>"aku pernah ke Semarang saking gak enaknya, aku tungguin dia sampai malem tapi dia gak dateng juga, aku cuman pengen jelasin langsung. aku sayang dan peduli tapi gak lebih dari teman aja gitu loh" jelasnya panjang, aku merasakan dia menghela nafas, lesu kemudian melanjutkan.</p>
+						<p>"aku tuh belum mau pacaran, tapi cewek ini suka meromantisasi sesuatu, akhirnya aku tersudut juga harus nembak dia, padahal ya, yang aku lakuin itu hal wajar dilakuin orang loh, aku lebih kasihan sama dia, ngarep banget. kasian deh". jelasnya yang membuatku geleng-geleng sendiri, menyadari aku juga seperti gadis ini.</p>
+					</div><div class="b-counter">45</div></div></div>	
+					<div class="b-page b-page-45" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"haeduh, liat sekarang, aku yang kasian sama kamu, nyesel kan kamu masih jomblo sampe sekarang?" balasku jengkel.</p>
+						<p>"hey, sesama jomblo jangan saling mengkasihani, harusnya saling pacaran" balasnya yang membuatku tak sadar menahan nafas dan tidak merespon.</p>
+						<p>"becanda woy" lanjutnya cepat.</p>
+						<p>Hatiku seperti balon warna hijau, meletus kacau. Serangan apa lagi ini Jo, kenapa aku bisa jengkel tapi juga terhibur, sambil mengatur otakku kembali kami lanjutkan obrolan.</p>
+						<p>dia bercerita juga tentang orang-orang yang ia temui, tentang hidup dan lampu jalanan yang redup dalam terbitnya fajar di kota Semarang. mengingatkanku pada lagu Bee gees yang tidak pernah aku resapi sebelumnya.</p>
+						<p>"Judulnya Massachusetts, dengerin deh" pintaku setalah kirimkan lagu spotify</p>
+						<h3>
+							Feel I'm goin' back to Massachusetts
+							<br>
+							Something's telling me I must go home
+							<br>
+							And the lights all went out in Massachusetts
+							<br>
+							The day I left her standing on her own
+						</h3>
+					</div><div class="b-counter">46</div></div></div>	
+					<div class="b-page b-page-46" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"hei, kapan-kapan kita ngobrol lagi ya" ajaknya mengakhiri obrolan panjang itu. Jelas aku iyakan dengan senang hati.</p>
+						<p>Namun, nyatanya sudah minggu-minggu berlau dia tidak menyapaku lagi, kapan-kapan itu mungkin selamanya buat Jo.</p>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/jembatan.png" style="width: 400px; height: 400px; margin-left: 2%;" alt="">
+				
+					</div><div class="b-counter">47</div></div></div>	
+					<div class="b-page b-page-47" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>s</div><div class="b-counter">48</div></div></div>
+
+	<!--Bagian 10-->
+					<div class="b-page b-page-48" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>X. Pamit</h1>
+						<p>"Hey, aku pamit ya dari obrolan. kalau ada yang mau ditanyain bisa DM di sosial media aku ya. seneng bisa ngobrol sama kamu, Good Luck" sebuah pesan aku kirimkan sore itu.</p>
+						<p>aku menunggu balasannya hingga aku tertidur dengan perasaan gelisah. Pukul 3 dini hari aku terbangun untuk mengambil wudhu. Ketika kembali ke kamar aku mendengar notifikasi itu, sebuah notifikasi yang aku tunggu.</p>
+						<p>"Pamit gimana sih, gak paham?" tulisnya dalam pesan. Saat itu ada perasaan jengkel dan lemas. aku biarkan pesan itu hingga aku selesai ibadah.</p>
+						<p>Aku mulai mengirimkan balasan dengan kehabisan akal. butuh beberapa saat sampai aku menemukan sebuah kalimat.</p>
+						<p>"kamu balesnya lama banget, aku takut ganggu kamu. so, pindah ke sosmed aja ya" aku tahu aku tidak benar-benar jujur saat itu.</p>
+						<p>kemudian balasnnya "oh yaampun, dikirain apa, oke pindah ya". aku mengusap dada berharap tidak emosi dengan tidak ada kata maaf darinya. Aku lanjut berdoa dan kembali lanjut tidur.</p>
+					</div><div class="b-counter">49</div></div></div>
+					<div class="b-page b-page-49" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Sebuah notifikasi masuk darinya pagi hari itu</p>
+						<p>"hey liat deh" Jo mengirimkan lagi video lawaknya seperti pertama kali.</p>
+						<p>here we go again, rasanya siklus ini kembali lagi kemudian menenggelamkan mukaku dalam bantal.</p>
+						
+
+						<h3>
+							Aku rindu hari dimana aku sangat muda dan naif<br> 
+							Aku pernah bertemu seorang pria<br>
+							yang bilang aku amat istimewa.<br>
+							dia sempurna tapi kemudian menghilang<br>
+							dulu, aku pernah pikir akan ada orang<br>
+							dan hari yang sempurna datang<br>
+							Tapi kini aku sadar "bahagia selamanya" itu tidak pernah ada
+						</h3>
+						<br>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/snow_white.png" style="width: 432px; height: 200px; margin-left: 1%;" alt="">
+					</div><div class="b-counter">50</div></div></div>
+	<!--Bagian 11-->
+					<div class="b-page b-page-50" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>XI. Kecewa</h1>
+						<p>Sore itu lumayan mendung, langit tidak menunjukan sedikit keceriaan sore yang menambah rasa gamang di hati, aku lihat beberapa pesan dan panggilan masuk yang aku hiraukan hari ini, tapi pikiranku tertuju padanya.</p>
+
+						<p>Mengapa perlu waktu 12 jam untuk menjawab dan tidak menambahkan apapun, apakah dia bosan? sungguh, aku benar-benar ingin berhenti disini. rasanya obrolan selama 3 hari ini tidak bermakna dan bisa disingkat dalam waktu 5 menit saja. pertanyaan selanjutnya tidak dijawab lebih dari sebulan.</p>
+
+						<p>Ada bagian dalam diri yang terus merasa kecewa dengan caranya membalas pesan terlalu lama. disisi lain dalam diriku sudah berhenti bertanya dan berdamai.</p>
+
+						<p>aku lelah harus membangun obrolan sendiri sementara dia membuatku menunggu selama itu.</p>
+
+						<p>Ini menggangguku dan aku muak.</p>
+
+						<p>Aku coba telpon sahabatku Ana yang sedang fitting baju pernikahannya. aku seperti orang yang meneleponnya karena ada maunya dan Ana selalu sudah tau apa yang aku mau.</p>
+					</div><div class="b-counter">51</div></div></div>
+					<div class="b-page b-page-51" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"aku pernah ada diposisimu, merasa penasaran dan mengharap cinta pada seseorang teramat sangat, tapi resikonya berharap pada manusia adalah kekecewaan"</p>
+
+						<p>"aku kasian sama kamu, andai aku kenal sama orang yang kamu suka ini, udah aku kasih pelajaran deh, tapi dia cuman orang dari internet, coba kamu terbuka sama orang-orang di dunia nyata yang nyata bisa kamu temui, dia mungkin gak mau ketemu kamu juga"</p>
+
+						<p>aku sadar, perasaan ini nyata tapi membiarkan hati terbuka untuk seseorang yang belum jelas adalah kebodohan.</p>
+
+						<p>malamnya ibuku meneleponku menanyakan kabar. Sedikit perkenalan, ibuku adalah penulis. ketika aku ceritakan virtual feeling yang aku rasakan dan patah hati yang mengganggu ini. respon darinya adalah tertawa. sangat menyebalkan.</p>
+
+						<p>"Perlu waktu 9 bulan bagi ibu untuk membuat hatimu nak dan seorang pria dari internet menghancurkannya dalam satu hari, ibu rasa kamu tidak patah hati seperti itu." kata ibu seperti mengusap air mataku</p>
+					</div><div class="b-counter">52</div></div></div>
+					<div class="b-page b-page-52" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"kamu menganggap hal ini terlalu serius dari awal, hubungan apapun datang dan pergi. ini bukanlah hal yang dalam. bukan berarti ibu tidak menghargai perasaanmu. perasaanmu itu nyata. Hanya saja, dalam hidup kamu akan kehilangan orang-orang yang memberikan dampak dalam hidup kamu, tapi kamu juga harus menerima bahwa di masa depan kamu akan menemukan pasangan yang memilki kualitas yang sama dan kamu akan bisa jadi lebih baik untuk hubungan selanjutnya. Bayangkan kamu terjebak dalam perangkap "jika" yang jujur ibu pikir ini akan buang-buang waktu, it's over. kamu akan menemukan lebih banyak hubungan yang menakjubkan di masa depan". jelasnya panjang membuatku menangis karena sadar aku bodoh membiarkan diri menjadi serapuh ini.</p>
+
+						<p>"kamu udah shalat ?" tanya ibu yang membuatku agak kaget dengan nadanya.</p>
+
+						<p>"iya mau ma" sambil mengusap air mata.</p>
+
+						<p>"Fokus sama kehidupanmu ya, jaga diri disana".</p>
+					</div><div class="b-counter">53</div></div></div>
+					<div class="b-page b-page-53" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<div>
+							<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/hopeless.png" style="	width: 450px; 
+							height: 630px; 
+							" alt="">
+						</div> 
+					</div><div class="b-counter">54</div></div></div>
+	<!--Bagian 12-->
+				<div class="b-page b-page-54" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>XII Tanggung Jawab</h1>
+						<p>Aku akui sangat kecewa, ketika hanya dia orang yang aku inginkan melihat story instagramku, tapi dia tak kunjung muncul sampai story itu berakhir.</p>
+
+						<p>Berharap mengomentari foto baruku atau tweet randomku.</p>
+
+						<p>Rasa penasaranku adalah tantangan, aku suka tantangan, tapi kali ini aku harus jujur pun aku tidak bisa hidup dengan orang seperti ini.</p>
+
+						<p>Aku sadari, awalanya hari-hari dengan penuh kesibukan dan malasnya menjalin hubungan serius adalah sebuah hal yang normal, tapi aku sadari bahwa selalu ada harapan tidak logis agar semesta mempertemukannku dengan sosok 'The One'.</p>
+
+						<p>Dalam postingan terbaruku, Lukisan Wanita di taman bunga, sebuah caption aku tulis untuknya. semoga menjadi penutup semua ekspektasiku tentangnya, obrolan kita dan tanda tanya yang tak kunjung dia balas sebulan lamanya.</p>
+
+						<p>"Untuk kamu yang tidak pernah menjanjikan apapun tapi membuat hidupku berwarna dengan perasan maya,</p>
+					</div><div class="b-counter">55</div></div></div>
+					<div class="b-page b-page-55" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Good Luck with your 20s dan semoga bertemu pasangan yang cocok. kamu adalah rasa penasaranku yang harus aku ikhlaskan. seorang yang sempurna bagi diri yang mencintai ide tentang cinta ini. aku seorang romantis yang putus asa. dan kamu adalah sebuah pelajaran tentang ekspektasi"</p>
+
+						<p>Bersama dengan itu, aku mensunyikan mode notifikasi dari akunnya di sosial media. </p>
+						<h3>
+							Stranger, that's all I see
+							<br>
+							When I look into your eyes
+							<br>
+							A soulmate who wasn't meant to be
+							<br>
+							Stranger, who knows all my secrets
+							<br>
+							Can pull me apart and break my heart
+							<br>
+							A soulmate who wasn't meant to be
+						</h3>
+					</div><div class="b-counter">56</div></div></div>
+	<!--Bagian 13-->
+					<div class="b-page b-page-56" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>XIII Ketegasan</h1>
+						<p>Banyak hal yang terjadi dalam hidup, hari ini bisa menjadi buruk atau baik bergantung dari sikap dalam meresponnya, aku tak tahu apa yang sedang terjadi dalam hidupnya yang menarik itu atau mimpi barunya atau apa yang sedang ia pelajari kali ini. tanpa mengurangi rasa kagumku padanya, aku harus tegas tidak membalas pesannya, tidak bertanya-tanya. Harus memutus lingkaran ratapan ini.</p>
+
+						<p>ada harga yang harus dibayar untuk pertanyaanku selama ini, mungkin inilah yang dikatakan pengalaman.</p>
+
+						<p>aku mulai berlari, menonton komedi, mengerjakan matematika, melukis dan bertemu orang baru.</p>
+
+						<p>tapi perasaan ini kembali seperti buku yang masih terbuka dengan segala kemungkinan di akhir cerita.</p>
+
+						<p>Buatku, Notifikasi dari dia seperti oase yang aku nantikan dalam perjalan gurun maya ini. maksudku, aku sangat amat menantikannya.</p>
+
+						<p>Malam itu sebelum tidur aku mengirimkan sebuah pesan untuknya:</p>
+					</div><div class="b-counter">57</div></div></div>
+					<div class="b-page b-page-57" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h2>
+						<p>"aku harap kamu membaca ini,</p>
+
+						<p>"sudah seminggu kamu meninggalkan pesanku terbuka tanpa ada jawaban atau tanggapan, mungkin pertanyaanku bukanlah hal penting, tapi aku merasa tidak dihargai, seharusnya kamu tidak memperlakukan orang semacam ini"</p>
+
+						<p>"kamu orang yang menarik, pada awalnya aku senang bisa bertukar surat dan chatting, tapi semakin kesini kamu sangat lama membalas suratku, apakah kamu sedang sibuk atau mungkin aku mengganggu? tolong katakan saja jika kita tidak bisa berteman"</p>
+						</h2>
+
+						<p>3 jam kemudian saat jam makan malam, aku sedang mengobrol dengan ibuku tentang apa yang akan kami masak di perayaan hari idul adha.</p>
+
+						<p>"Hei, maaf banget ini kebiasan buruk aku, terkadang aku lupa membalas pesan karena ada distraksi lain, bukan maksudku gak bales pesan, aku masih mau temenan"</p>
+
+						<p>"maaf ya kalo km merasa gak dihargai, tapi bukan maksudku gitu"</p>
+					</div><div class="b-counter">58</div></div></div>
+						<div class="b-page b-page-58" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+							<p>"aku emang kelewatan ya"</p> lanjutnya.
+
+							<p>begitu penjelasannya, aku tidak tau apa yang harus aku katakan untuk meresponnya, dalam benakku aku hanya ingin tau hal ini dan move on.</p>
+
+							<p>"oh gitu, ya sekarang aku ngerti, mau diapain lagi, makasih sebelumnya" jawabku singkat. cukup hentikan sampai disini</p>
+
+							<p>"kamu apa kabar? " tanyanya mengawali obrolan panjang dari covid saham hingga hewan peliharaan liar kami.</p>
+
+							<p>hal yang sama terjadi, dia tetap membalasku dalam jam-jam tertentu, dengan rata-rata membalas setelah 4 sampai 7 jam aku mengirimkan balasan.</p>
+
+							<p>rasanya kini berbeda, aku tidak bertanya apakah dia akan membalasku atau tidak, menungguku jadi berbeda. aku lebih lega.</p>
+
+							<p>tapi aku menyadari sesuatu, aku sedang berada dalam gurun maya.</p>
+						</div><div class="b-counter">59</div></div></div>
+						<div class="b-page b-page-59" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+
+						<p>saat aku merasa dia mendekat, rasanya seperti oase yang dulu aku nantikan hanyalah hal biasa yang tidak bisa aku katakan oase, aku yang fatamorgana karena kesendirian ini, aku dipenuhi dengan rasa tanya. kenyataanya oase yang aku tunggu hanyalah setumpukan kaktus biasa. tidak ada hal apapun yang menjawab penasaranku dengan harapan yang aku inginkan.</p>
+
+						<p>aku ucapkan terima kasih atas obrolan tidak terputusnya selama 3 hari terakhir ini, obrolan sebenarnya menarik, tapi aku tetap tidak menemukan hal berarti. aku juga tidak percaya bahwa aku bosan, ya menunggu.</p>
+
+						<p>"senang bisa ngobrol, kapan kapan kita ngobrol lagi ya 👋" kataku menutup obrolan malam itu. tidak ada respon dimenit pertama dilanjutkan menit-menit berikutnya hingga aku tertidur. memang dia tidak layak ditunggu memendam kekesalan dalam hati.</p>
+
+						<p>Esoknya, aku berolah raga cukup pagi, jalanan hanya terlihat oleh bantuan cahaya lampu-lampu jalan yang saling menyambung menghalau kegelapan.</p>
+						<p>kemudian pandanganku terpaku pada satu rumah, dimana ada sesosok bayangan wanita sedang duduk di kursi. jantungku berdebar seketika karena aku hanya dapat melihatnya dalam warna hitam dengan sayup-sayup kuning lampu teras.</p>
+						</div><div class="b-counter">60</div></div></div>
+						<div class="b-page b-page-60" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+							<p>kemudian sosok itu berdiri dan membuatku teriak kaget.</p>
+
+							<p>ternyata raut mukanya adalah tante Ros, rasanya lega seperti selesai menyelesaikan marathon.</p>
+
+							<p>"hey jangan kaget dong, tumben olah raga pagi-pagi sekali, mampir dulu sini" sapanya</p>
+
+							<p>"oh yaampun tante, kenapa pagi-pagi duduk di teras sih tante, jantungku mau copot. tante itu kayak hantu"</p>
+
+							<p>"hahaha, ada-ada aja kamu. tante lagi nungguin mas Fajar, katanya dia udah di jalan, dia naik penerbangan dini hari".</p>
+							<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/gunung.png" style="width: 290px; 
+							height: 290px; 
+							margin-left: 80px;" alt="">
+						</div><div class="b-counter">61</div></div></div>
+						<div class="b-page b-page-61" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+							<p>aku kagum dengan hubungan tante ros dan om fajar, mereka LDR semenjak mereka kuliah, saat itu aku masih SMP.</p>
+
+							<p>"oh gitu tan, aku salut sih sama hubungan tante, so sweet meskipun LDR terus"</p>
+
+							<p>"hahaha, iya ya dari kamu kursus matematika sama tante pas kamu masih ABG loh, ya intinya gak mudah sih. komunikasi berjalan dua arah. dari awal kenal Om Fajar tante selalu tekankan itu, sesimpel 'aku sedang sibuk', 'lagi banyak hal yang dipikirin' kalau memang tidak bisa komunikasi sulu"</p>
+
+							<p>"maklum, om fajar itu dulunya cowok pemalu"</p>
+
+							<p>"pemalu tante?"</p>
+
+							<p>"iya, pokoknya kalau kamu dekat dengan cowok yang pendiam, coba tekankan hal itu, kalau dia tidak juga ada komunikasi, dia gak banget deh. jangan sibuk menunggunya"</p>
+
+							<p>tunggu, ini sangat cocok dengan situasiku. dia selalu menjawab pesanku. tapi terkadang ada pertanyaan penting yang tidak dia balas.</p>
+						</div><div class="b-counter">62</div></div></div>
+						<div class="b-page b-page-62" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+
+							<p>Aku berpamitan untuk pulang, di sepanjang jalan yang semakin bertaburan cahaya-cahaya fajar, aku sadar. aku berlebihan dalam banyak hal tentang cowok pendiam ini.</p>
+
+							<p>aku hanya belum bisa sibuk dalam banyak perasaan ketika aku memiliki perasaan terhadap seseorang.</p>
+
+							<p>Setibanya dirumah aku mengecek ponselku dan menemukan notifikasi.</p>
+
+							<p>"hey, bisa aku simpan nomor telponmu?"</p>
+						</div><div class="b-counter">63</div></div></div>
+						<div class="b-page b-page-63" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div></div><div class="b-counter">64</div></div></div>
+	<!--Bagian 14-->
+					<div class="b-page b-page-64" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>XIV. Pertemuan Nyata</h1>
+						<p>Aku masih tidak menyangka kami akhirnya bertemu langsung, maksudku ini adalah pengalaman pertamaku bertemu orang asing dari internet, saat dia mengajakku bertemu malam itu aku jelas menolaknya, tapi ternyata dia hanya bergurau.</p>
+						<p>tapi, mana bisa aku menolak ajakan bersepeda keliling kota? tentu tidak, aku suka bersepeda.</p>
+						<p>"kamu dimana?" tanyanya dalam pesan yang membuatku tersenyum.</p>
+						<p>"disini" balasku dengan foto tempat makan cepat saji yang pernah ia sebutkan pada awal kami berkirim surat.</p>
+						<p>Aku senang akhirnya dia keluar dari sangkar pernyindirannya, yaitu rumah dan kucingnya, dia seperti di foto kecuali berat badannya yang sedikit gemuk dan rambutnya yang gondrong, kami mengulang beberapa pertanyaan yang pernah kami ajukan sebelumnya awalnya aku merasa canggung dan ingin cepat berakhir, tapi sepertinya kami berusaha saling terbuka dan menjadi diri sendiri.</p>
+
+					</div><div class="b-counter">65</div></div></div>	
+					<div class="b-page b-page-65" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>ya, setahun terakhir ini aku sudah belajar banyak hal tentang ekspektasi dan realita, tentang komunikasi dan mencintai diri.</p>
+						<p>dari kejauhan saat ia menerima telpon masuk, aku sadar bahwa aku terlalu banyak merasakan, sehingga aku juga sering terluka, tapi hey, bukankah artinya emosiku jadi lebih kaya sekarang dan itu yang membuat hidupku tahun ini lebih berwarna. tak sangka aku tersenyum kearahnya. tak sangka ia membalasnya.</p>
+						<p>sambil menjelaskan konyolnya obrolan dengan managernya, kami bersiap untuk mengayuh sepeda. pertemuan pertama mungkin akan canggung terutama persona masing-masing di Internet berbeda dengan dunia nyata.</p>
+						<p>"By the way, kenapa pilih ketemu disini?" tanya Jo.</p>
+						<p>"ini tempat pertama yang kamu ditulis di surat" jawabku dilanjut dengan senyum simpul.</p>
+						<p>"oh ya? bisa inget gitu. Nanti kita datengin semua tempat yang udah aku sebutin" ajaknya.</p>
+
+					</div><div class="b-counter">66</div></div></div>
+					<div class="b-page b-page-66" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>aku mematung dihadapannya, ada perasaan hangat menggelitik menyebar dari perutku.</p>
+						<p>aku mengangguk dengan senyum simpul, kami pun mulai bersepeda.</p>
+						<p>kami berkeliling sekitaran kota sesekali menepi untuk sekedar minum. Tujuan kami adalah sebuah danau yang tidak jauh dari pusat kota.</p>
+						<p>hari semakin siang, danau mulai sepi dari warga yang berolah raga, aku dan Jo berteduh di bawah pohon. Hanya ada sedikit orang yang sedang mencetak rekor lari harian masing-masing, beberapa hanya duduk dan mengobrol seperti kami.</p>
+						<p>"ngomong-ngomong kamu lagi sendiri sar?" tanyanya kemudian.</p>
+						<p>"bareng kamu lah, aneh" jawabku menggodanyanya.</p>
+						<p>"maksudku, kamu single kah?" tanyanya kembali</p>
+						<p>"haha, memang selama ini kurang jelas ya?" tanyaku spontan.</p>
+						<p>"100% single, nyaman tau jadi single itu" lanjutku.</p>
+					</div><div class="b-counter">67</div></div></div>
+					<div class="b-page b-page-67" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>Jo cukup tertarik dengan jawabanku, dia bercerita tentang ia yang belum bisa move on dari kekasihnya sejak SMA, sebuah cerita yang aku tidak pernah tau sebelumnya.</p>
+						<p>"dia minta break biar bisa merayakan jadi single, tapi malah jadi siksaan buatku. Dia di korea saat ini, dari status Instagramnya, dia cukup menjalani hidup yang dia impikan dan kayaknya dia udah menemukan yang lebih menyenangkan dariku" jelasnya panjang yang membuatku sompati.</p>
+						<p>"Entahlah Jo, aku gak begitu ngerti 'relationship', bodo banget malah. sebagai single akut aku malah susah buka hati, terlalu memfiksasi orang yang aku suka. saat awal pandemik itu aku baru putus juga dengan orang yang dikenalin ibuku, aku gak berniat menjalin hubungan, masih kepingin single". jelasku</p>
+						<p>"tapi aku ngerti rasanya terobsesi sama seseorang, seperti rasa penasaran ujung cerita sebuah novel, memproyeksikan dia sebagai karakter utama yang sempurna" sambungku.</p>
+						<p>"apa maksudnya memproyeksikan Sar?" tanya Jo penasaran.</p>
+					</div><div class="b-counter">68</div></div></div>
+					<div class="b-page b-page-68" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"melihat seseorang yang aku suka seperti apa yang aku ingin lihat, seperti penulis cerita yang bebas menentukan karakter dan ujung cerita" jawabku panjang, Jo diam sejenang lalu menganggukan kepalanya memahami sesuatu.</p>
+						<p>"iya sih kamu aneh Sar hahaha" kata Jo sebagai responnya yang kubalas dengan pukulan gemas ke arah lengannya.</p>
+						<p>"tapi Jo, aku mulai terbuka sekarang, kebalikan sama kamu yang jadi anti sosial hehe"</p>
+						<p>"dan aku juga cukup mengerti pacarmu yang ingin merasakan tidak terikat oleh apapun" sambungku, aku lihat Jo serius memperhatikan saat ini.</p>
+						<p>"cewek itu sangat amat terikat sama orang tua dan keluarganya dalam mengambil keputusan, bisa dibilang dalam hal apapun, ketika dia masuk usia 20an, menuju menikah itu cuman jeda kurang dari 8 tahun lah. Sangat penting untuk bisa memahami diri sendiri saat kita tidak terikat oleh apapun, menjadi bebas" Jelasku panjang yang dilanjut dengan keheningan, aku juga menyadari betapa fokus dan menawannya mata Jo.</p>
+					</div><div class="b-counter">69</div></div></div>
+					<div class="b-page b-page-69" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"Anyway, semoga pandemik cepat selesai dan pacarmu cepet selesai sama dirinya dan balikan sama kamu" ucapku memecahkan keheningan.</p>
+						<p>"Entahlah, mungkin semua berubah sejalan dengan waktu, tanpa komitmen semakin kecil kemungkinan kita balkan, maksudku bukan hanya dia yang berubah, akupun berubah" balasnya, aku mengangguk cukup setuju.</p>
+						<p>Aku terpikir untuk beranjak pergi sebentar untuk menenangkan perasaanku yang mulai bergejolak dengan menawarkan minuman yang hendak aku beli, sebuah Es kelapa menyegarkan.</p>
+						<p>"Otakku pusing sama obrolan berat ini, biar aku traktir kamu minum, tunggu ya" pintaku spontan lalu beranjak pergi, sambil menunggu sajian sesekali aku melihat kearahnya yang sedang berbaring. ada perasaan baru menggangguku, takut.</p>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/danau.png" style="width: 185px; height: 185px; margin-left: 40%;" alt="">
+					</div><div class="b-counter">70</div></div></div>
+					<div class="b-page b-page-70" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>kami melanjutkan obrolan dengan Es kelapa terkenal untuk berbuka puasa, lalu perasaan takut itu membuatku bergelut dengan hal yang aku ingin sampaikan.</p>
+						<p>"hey Jo, mungkin ini terakhir kita ketemu, aku dipindahtugasin ke kota Surabaya dua Minggu lagi" ucapku sambil memperhatikan seksama responnya</p>
+						<p>"Lucu, disaat orang jadi sendiri, pandemik ini aku malah belajar terbuka, kenal banyak teman dari banyak tempat. Aku jadi sadar Jo, teman yang ada sejak lama, teman kecil sampai dewasa, temen yang menemaniku merayakan masa-masa single. Sekarang kami berdua single, tapi aku malah jatuh cinta sama orang lain"</p>
+						<p>"eh aku gak bisa bilang jatuh cinta sih. I do like him, but he does not like me back, but i am okay with this" lanjutku segera.</p>
+						<p>"you know what i mean?" tanyaku meminta konfirmasi.</p>
+						<p>"tunggu, apa orang yang kamu suka itu tau?" tanyanya dilanjut jeda yang tidak bisa aku jawab meskipun aku tahu.</p>
+						<p>"belum ya, sebaiknya selesain perasaanmu sebelum mulai yang baru, buat ukuran orang yang baru terbuka sama orang, mungkin orang ini akan susah kamu lupain" lanjutnya</p>
+					</div><div class="b-counter">71</div></div></div>
+					<div class="b-page b-page-71" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"dia bikin aku nagis tanpa perlu melakukan hal yang salah, dia membuat hariku berwarna hanya dengan obrolan ringan, dia bikin aku punya perasaan lebih kaya meskipun hanya dalam kata-kata" jawabku dengan melihat wajahnya lekat. tampak jelas Jo terkejut dengan pernyataanku.</p>
+						<p>aku mengatakan bahwa jatuh cinta bukan soal kepemilikan, tapi untuk mengungkapkannya pun aku tidak punya nyali.</p>
+						<p>"aku pikir aku gak perlu orang sempurna menjadi kekasih ku seperti ekspektasiku selama ini, karena mana ada? teman lamaku ardi adalah rasa cukup"</p>
+						<p>jemari Jo mendekat, aku bisa rasakan jemarinya membelai rambutku. dia menarik daun dirambutku seraya tersenyum, dan kamipun bersiap pulang.</p>
+						<p>tunggu, apakah perasaanku sudah selesai? apakah aku tidak akan memikirkannya setelah ini?</p>
+						<p>kami memacu sepeda menuju tengah kota.</p>
+					</div><div class="b-counter">72</div></div></div>
+
+
+	<!--Bagian 15-->
+					<div class="b-page b-page-72" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>XV. Persimpangan Jalan</h1>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/persimpangan.png" style="width: 400px; 
+						height: 270px; 
+						margin-left: 30px;" alt="">
+						<p>Sara menepikan sepedanya ketika melihat sebuah persimpangan jalan dan ia mulai menangis, Sara tau setelah itu mereka akan berpisah.</p>
+						<p>"Sar, kenapa?" tanya Jo berlari menghampiri Sara.</p>
+						<p>"deja vu Jo, aku suka tiba-tiba nangis kalo deja vu haha" berusaha tertawa dengan suara paraunya, Sara tau itu tidak masuk akal.</p>
+					</div><div class="b-counter">73</div></div></div>
+					<div class="b-page b-page-73" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"Jo kamu bisa jalan duluan" saranku kemudian.</p>
+						<p>"yaampun Sar, dikiriain kenapa, call me if you need me, ok?" jawab jo yang aku jawab dengan anggukan dan senyum yang dipaksakan.</p>
+						<p>"Jo !" saut Sara kemudian setelah beberapa meter Jo mengayuh sepedanya.</p>
+						<p>Sara menghampiri Jo begitu juga Jo yang juga melepaskan helmnya.</p>
+						<p>jarak mereka kurang dari setengah meter, membuat hati Sara kacau dalam jeda yang panjang. Suara Sara parau menahan tangisnya.</p>
+						<p>"aku suka kamu, kamu orang yang aku ceritain tadi, aku suka surat-surat balasamu, aku berusaha gak mikirin pesan-pesanku yang lupa kamu balas, bahkan aku berusaha untuk benci kamu tapi gak bisa Jo, aku gagal. aku terlalu takut kita kembali jadi orang asing. hari ini rencanaku adalah jadi temanmu, tapi aku gagal juga, aku benci semuanya perasaanku hanya virtual Jo"</p>
+						<p>"Jo kamu gak sesempurna itu, tapi aku suka" sambung sara, suaranya semakin parau dengan air mata yang mulai tidak terbendung.</p>
+					</div><div class="b-counter">74</div></div></div>
+					<div class="b-page b-page-74" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>"aghh, ini memalukan" lanjut sara dan menutup mukanya dengan kedua tangannya yang basah dengan air mata.</p>
+						<p>"Sar, aku minta maaf" jawabnya membuat Sara kaget. kata maaf bukanlah hal yang ia harapkan.</p>
+						<p>"Jo, masalahnya itu aku, bukan kamu. aku lega ko sekarang, cuman malu aja hehe. i am not looking for anything serious, percaya deh Jo" Jawab sara berusaha meyakinkan.</p>
+						<p>"aku pulang sekarang ya" lanjut sara menuju sepedanya.</p>
+						<p>"Tunggu Sar, kita harus ngobrol dulu" pinta Jo menghalangi Sara dari sepedanya.</p>
+						<p>"Jujur butuh waktu buat aku proses semua ini, aku sama sekali gak sadar" Lanjut Jo berusaha menenangkan. Jo memeluk Sara, sekarang ia merasakan kehangatan tubuh seseorang yang sangat ingin ia temui.</p>
+					</div><div class="b-counter">75</div></div></div>
+					<div class="b-page b-page-75" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div></div><div class="b-counter">76</div></div></div>
+	<!--Bagian 16-->
+					<div class="b-page b-page-76" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<h1>XVI. Penutup</h1>
+						<p>Januari 2022 menjadi awal tahun harapan bagi warga dunia, beberapa negara sudah pulih dari Pandemik, beberapa negara masih membatasi kegiatan warganya dan beberapa negara masih kelimpungan mengatasinya dengan semakin beragamnya mutasi virus. Tidak ada resolusi optimis bertebaran di media sosial, hanya doa.</p>
+						<p>Malam itu listrik padam, hanya aku dan koneksi internet di ruang tengah, diatas sofa yang hangat membaca surat Jo tentang pengalamannya menjadi murid pertukaran pelajar 5 tahun lalu.</p>
+						<p>kemudian secangkir teh hangat tersaji di atas meja, aku tersenyum seraya memberikan ucapan terima kasih. aku menyimpan tabletku dan mulai mengobrol tentang betapa menyenangkannya ide melanjutkan S2 di luar negeri di tengah suasana sayup ini.</p>
+						<p>sambil kugenggap cangkir teh, aroma teh hijau, lemon dan mint mulai menghangatkan perasaanku. cahaya lilin menampakan jelas warna emas di jari manisku.</p>
+						<p>aku sadar, Jo memang tidak pernah membuka perasaannya dengan siapapun</p>
+					</div><div class="b-counter">77</div></div></div>
+					<div class="b-page b-page-77" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>tapi aku tetap menyangkalnya karena belum ada kejelasan artikulatif, sampai moman perpisahan 2 bulan lalu dimana aku tidak lagi bisa merahasiakan perasaanku darinya.</p>
+						<p>Dalam cahaya lilin dan rembulan malam itu aku melihat Jo dihadapanku bercerita dengan semangat tentang mimpinya, aku tersadar Jo tidak seperti itu, Jo sangat tidak berenergi seperti ini.</p>
+						<p>kini aku melihat seksama wajah pria dihadapanku, dia Ardi. tentu saja, aku tersenyum yang membuatnya bingung lalu aku mulai menceritakan pengalamanku saat aku bekerja dengan client asing yang tidak kalah lucu.</p>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/penutup.png" style="width: 400px; 
+						height: 270px; 
+						margin-left: 30px;" alt="">
+					</div><div class="b-counter">78</div></div></div>
+					<div class="b-page b-page-78" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<p>3 bulan lalu aku berpamitan dengan Jo. setelah pelukan itu Jo mengatakan hal yang tak mungkin aku lupa</p>
+						<p>"Your feeling is real and I do like you, you are brilliant, kind, unique and weird but you deserve someone better Sar"</p>
+						<p>"how long it takes to find him, I hope you enjoy your 20s and meet lovely person that suit you"</p>s
+					</div><div class="b-counter">79</div></div></div>
+					<div class="b-page b-page-79" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div></div><div class="b-counter">80</div></div></div>
+					<div class="b-page b-page-80" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/catatan.png" class="regular-size" alt="">
+						<h1>Catatan</h1>
+						<p>Butuh waktu berbulan-bulan bagiku untuk bisa pergi lebih dalam untuk menemukan adanya kebenaran yang berada didasar lautan perasaanku yang dingin dan sibuk karena memikirkan duniaku dan ambisiku, betapapun berat rasanya untuk kembali mengingat, kebenaran itu aku perlu angkat juga kepermukaan.</p>
+					</div><div class="b-counter">81</div></div></div>
+					<div class="b-page b-page-81" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div></div><div class="b-counter">82</div></div></div>
+					<div class="b-page b-page-82" style="display: none;"><div class="b-wrap b-wrap-left" style="width: 430px; height: 630px; padding: 10px;"><div></div><div class="b-counter">83</div></div></div>
+					<div class="b-page b-page-83" style="display: none;"><div class="b-wrap b-wrap-right" style="width: 430px; height: 630px; padding: 10px;"><div>
+						<img src="file:///Users/halowidy/Downloads/girlwithherdream/Flip%20Blockbook.js/images/1_cloud_nbg.png" class="regular-size" alt="">
+						<h3>Terima Kasih sudah membaca, ceritain pendapatmu melalui DM pada Instagran @widyline</h3>
+					</div><div class="b-counter">84</div></div></div>
+
+
+			</div>
+		<div class="b-overlay b-overlay-prev b-prev" title="Previous Page"></div><div class="b-overlay b-overlay-next b-next" title="Next Page"></div></div>
+        
+        <script type="text/javascript">
+			$(function() {
+				var $mybook 		= $('#mybook');
+				var $bttn_next		= $('#next_page_button');
+				var $bttn_prev		= $('#prev_page_button');
+				var $loading		= $('#loading');
+				var $mybook_images	= $mybook.find('img');
+				var cnt_images		= $mybook_images.length;
+				var loaded			= 0;
+				 
+				$mybook_images.each(function(){
+					var $img 	= $(this);
+					var source	= $img.attr('src');
+					$('<img/>').load(function(){
+						++loaded;
+						if(loaded == cnt_images){
+							$loading.hide();
+							$bttn_next.show();
+							$bttn_prev.show();
+							$mybook.show().booklet({
+								name:               null,                            //  
+								width:              900,                             //  
+								height:             650,                             //   
+								speed:              600,                             //  
+								direction:          'LTR',                           //  
+								                           //  
+								next:               $bttn_next,          			//  
+								prev:               $bttn_prev,          			//  
+								                       
+							});
+							Cufon.refresh();
+						}
+					}).attr('src',source);
+				});
+				
+			});
+
+        </script>
+</div></body></html>
