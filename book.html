@@ -252,6 +252,14 @@ a#title{
 	font-weight:bold;
 }
 
+a#title:hover{
+	font-size:45px;
+	color:#5a7baf;
+	text-align:center;
+	display: block;
+	font-weight:bold;
+}
+
 .navbar-icon{
 	padding-top: 1%;
 	padding-left: 25%;
@@ -259,6 +267,8 @@ a#title{
 	display: block;
 	font-size: 30px;
 }
+
+
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -296,21 +306,23 @@ ul {
 			<li> <a class="navbar-icon"  href="https://www.instagram.com//"><img src="images/instagram.ico" alt="HTML tutorial" width="30" height="30" ></a></li>
 			<li><a class="navbar-icon"  href = "mailto:@gmail.com?subject = Feedback&body = Message">
 				<img src="images/email.ico" alt="HTML tutorial" width="30" height="30" ></a></li>
-			<audio src="music/fallinlove.mp3" controls>
+			<!-- <audio controls autoplay>
 				<p>If you are reading this, it is because your browser does not support the audio element.</p>
-				</audio>
+				<source src="music\fallinlove.mp3" type="audio/mpeg">
+			</audio> -->
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6S0Pt2AXOaduvu1pT9RpD3?utm_source=generator" width="340" height="80" frameBorder="0" allowfullscreen="" allow="autoplay;encrypted-media; picture-in-picture" loading="lazy"></iframe>
 		</ul>
 	  
 <head>  
 </div>
-<div><a id="title" class="animated animatedFadeInUp fadeInUp" >Virtual Feelings</a></div>
+<div><a id="title" class="animated animatedFadeInUp fadeInUp" href="index.html">Virtual Feelings</a></div>
 </head>
 
     <body>
 		<div class="book_wrapper animated animatedFadeInUp fadeInUp">
 			
 		
-			<a id="next_page_button"></a>
+			<a id="next_page_button" id="play"><img id="play"></a>
 			<a id="prev_page_button"></a>
 			 
 			<div id="mybook" style="display:none;">
@@ -331,7 +343,6 @@ ul {
 						<p>Kehidupan berlanjut. musim dan perayaan telah berulang tapi Pandemik ini masih saja memburuk, sialnya satu-satunya kisah romansaku ialah jatuh cinta pada karakter fiksi, sampai seorang pria dari internet mengirimkan surat elektronik.</p>
 		
 					</div>
-		
 	</body>
 	<!--Bagian 1-->	
 					<div>
@@ -1053,8 +1064,9 @@ ul {
 
 			</div>
 		</div>
-        
+		<audio id="audio" src="music\flippingbook.wav"></audio>
         <script type="text/javascript">
+
 			$(function() {
 				var $mybook 		= $('#mybook');
 				var $bttn_next		= $('#next_page_button');
@@ -1063,7 +1075,7 @@ ul {
 				var $mybook_images	= $mybook.find('img');
 				var cnt_images		= $mybook_images.length;
 				var loaded			= 0;
-				 
+				
 				$mybook_images.each(function(){
 					var $img 	= $(this);
 					var source	= $img.attr('src');
@@ -1077,18 +1089,40 @@ ul {
 								name:               null,                            //  
 								width:              900,                             //  
 								height:             650,                             //   
-								speed:              600,                             //  
+								speed:              1200,                             //  
 								direction:          'LTR',                           //  
-								                           //  
 								next:               $bttn_next,          			//  
 								prev:               $bttn_prev,          			//  
 								                       
 							});
-							Cufon.refresh();
+
+						
 						}
+						
 					}).attr('src',source);
+
+					
 				});
+
 				
 			});
+			document.getElementById('mybook').addEventListener('click', function (e) 
+			{
+			  e.preventDefault();
+			  document.getElementById('audio').play();
+			});
 
+			//
+			$(window).on('load resize', function() {
+				$('iframe[src*="embed.spotify.com"]').each( function() {
+				  $(this).css('width', $(this).parent().css('width'));
+				  $(this).attr('src', $(this).attr('src'));
+				  $(this).removeClass('loaded');
+				  
+				  $(this).on('load', function(){
+					$(this).addClass('loaded');
+				  });
+				});
+			  });
+	
         </script>

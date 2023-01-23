@@ -101,6 +101,12 @@ body {
   animation-fill-mode: forwards; 
 }
 
+.animated:hover img{
+  opacity: .5;
+}
+
+
+
 .animatedFadeInUp {
   opacity: 0
 }
@@ -122,8 +128,20 @@ body {
   <div class="animated animatedFadeInUp fadeInUp">
     <h1>a story from Cyberspace</h1>
     <p>to the guy on the internet, good luck with your 20s</p>
-    <img src="images/mail.png" width="400" alt="">
-    <button class="button" onclick="document.location='book.html'">.Read</button>
+      <a href="book.html">
+        <img src="images/mail.png" width="400" alt=""  id="play">
+      </a>
+
   </div>
 </body>
+<audio id="audio" src="music\page-flip-02.mp3"></audio>
+
+<script>
+  document.getElementById('play').addEventListener('click', function (e) 
+  {
+    e.preventDefault();
+    document.getElementById('audio').play();
+    setTimeout(function(){ location.href = 'book.html'; }, document.getElementById('audio').duration * 3000);
+  });
+</script>
 </html>
